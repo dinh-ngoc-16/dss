@@ -15,7 +15,7 @@
                 echo '<script>
                 localStorage.setItem("iduser", "'.$row['UserID'].'");
                 localStorage.setItem("role", "'.$row['Role'].'");
-                window.location = "../trangQuestion/trang1.php?user='.$_POST['user'].'&pass='.isset($_POST['pass']).'";
+                window.location = "../trangQuestion/index.php?user='.$_POST['user'].'&id='.$row['UserID'].'";
                 </script>';
     }
       }
